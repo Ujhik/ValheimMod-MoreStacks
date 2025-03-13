@@ -22,8 +22,7 @@ Stacks from left to right, top to botom:
  - Silver Ore  
  - Flametal Ore  
  - Flametal Ore (New)  
- - Copper Scrap  
- - Bronze Scrap  
+ - Copper/Bronze Scrap  
  - Iron Scrap  
  - Black Metal Scrap  
  - Resin  
