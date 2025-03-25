@@ -1,8 +1,8 @@
 ﻿{
   "name": "MoreStacks",
-  "description": "adds several more stacks/stockpiles/piles to the game and interfaces with DynamicStoragePiles to make them work as chests with changing visuals depending on the quantity of items stored inside",
-  "version_number": "1.0.0",
-  "website_url": "https://github.com/Ujhik/ValheimMod-MoreStacks/tree/main",
+  "description": "Adds several more stacks/stockpiles/piles to the game and interfaces with DynamicStoragePiles to make them work as chests with changing visuals depending on the quantity of items stored inside",
+  "version_number": "1.0.3",
+  "website_url": "https://github.com/Ujhik/ValheimMod-MoreStacks",
   "dependencies": [
     "denikson-BepInExPack_Valheim-5.4.2202",
     "ValheimModding-Jotunn-2.20.3"

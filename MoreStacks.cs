@@ -39,7 +39,7 @@ namespace MoreStacks {
     internal class MoreStacks : BaseUnityPlugin {
         public const string PluginGUID = $"ujhik.{PluginName}";
         public const string PluginName = "MoreStacks";
-        public const string PluginVersion = "1.0.0";
+        public const string PluginVersion = "1.0.3";
 
         private static bool firstExecution = false;
 
@@ -60,7 +60,7 @@ namespace MoreStacks {
         public static event Action OnPrefabsRegistered;
 
         private void Awake() {
-            CreateConfigValues();
+            //CreateConfigValues();
             _harmony = Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), PluginGUID);
 
             InitializeStacks();
@@ -121,13 +121,13 @@ namespace MoreStacks {
             //    new ConfigDescription("", sliderRange2, isAdminOnly));
         }
 
-        [HarmonyPatch(typeof(EnvMan), "FixedUpdate")]
-        public static class EnvMan_Update_Patch {
-            private static void Prefix(ref long ___m_dayLengthSec, ref EnvMan ___s_instance) {
-                GameObject newStack = PrefabManager.Instance.GetPrefab(getStackName("TrophySkeleton"));
-                if (newStack != null) {
-                    MeshRenderer newStackMeshRenderer = newStack.GetComponentInChildren<MeshRenderer>();
-                    Material material = newStackMeshRenderer.sharedMaterial;
+        //[HarmonyPatch(typeof(EnvMan), "FixedUpdate")]
+        //public static class EnvMan_Update_Patch {
+        //    private static void Prefix() {
+        //        GameObject newStack = PrefabManager.Instance.GetPrefab(getStackName("TrophySkeleton"));
+        //        if (newStack != null) {
+        //            MeshRenderer newStackMeshRenderer = newStack.GetComponentInChildren<MeshRenderer>();
+        //            Material material = newStackMeshRenderer.sharedMaterial;
 
                     //material.SetTextureScale("_MainTex", new Vector2(testingSlider1.Value, testingSlider2.Value));
                     //material.SetTextureOffset("_MainTex", new Vector2(testingSlider3.Value, testingSlider4.Value)); 
@@ -146,7 +146,7 @@ namespace MoreStacks {
                     //}
 
                     //changeCullingDistanceLOD(newStack, testingSlider1.Value);
-                }
+                //}
 
                 //if (!firstExecution && Time.frameCount % 1200 == 0) {
                 //    firstExecution = true;
@@ -157,10 +157,8 @@ namespace MoreStacks {
                 //    GameObject newFromHoneyPile = honeyPile.transform.Find("New").gameObject;
                 //    changeCullingDistanceLOD(newFromHoneyPile, 0.5f);
                 //}
-            }
-        }
-
-        
+        //    }
+        //}
 
         private void OnDestroy() {
             _harmony?.UnpatchSelf();

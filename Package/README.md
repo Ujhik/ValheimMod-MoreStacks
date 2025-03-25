@@ -22,8 +22,7 @@ Stacks from left to right, top to botom:
  - Silver Ore  
  - Flametal Ore  
  - Flametal Ore (New)  
- - Copper Scrap  
- - Bronze Scrap  
+ - Copper/Bronze Scrap  
  - Iron Scrap  
  - Black Metal Scrap  
  - Resin  
@@ -50,6 +49,7 @@ For best results, install this mod on both the server and all clients to avoid t
 
 ## Links
 - [Thunderstore](https://valheim.thunderstore.io/package/Ujhik/MoreStacks/)
+- [Nexus](https://www.nexusmods.com/valheim/mods/3011)
 - [Github](https://github.com/Ujhik/ValheimMod-MoreStacks)
 - Discord: You can ping me in the Jotunn discord: [Jötunn discord](https://discord.gg/DdUt6g7gyA)
 
